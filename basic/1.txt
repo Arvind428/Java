@@ -1,0 +1,98 @@
+## 1. Explain Java with its Features
+
+### Definition
+
+Java is a high-level, object-oriented, platform-independent programming language developed by James Gosling and his team at Sun Microsystems in 1995.
+
+Java is used to develop desktop applications, web applications, enterprise software, and Android applications.
+
+### Features of Java
+
+1. Simple: Java has easy-to-understand syntax and removes complex features such as explicit pointers.
+2. Object-Oriented: Java uses classes and objects and supports inheritance, encapsulation, polymorphism, and abstraction.
+3. Platform Independent: Java programs can run on different operating systems because Java code is compiled into bytecode that runs on the JVM.
+4. Secure: Java provides bytecode verification and controlled memory access to improve security.
+5. Robust: Java supports exception handling, type checking, and automatic memory management.
+6. Portable: Java bytecode can run on different platforms that support a compatible JVM.
+7. Multithreaded: Java supports executing multiple threads concurrently.
+8. High Performance: Java uses Just-In-Time (JIT) compilation to improve execution speed.
+9. Distributed: Java provides networking libraries to develop applications that communicate over networks.
+10. Dynamic: Java can load classes and libraries at runtime when required.
+
+Conclusion: Java is widely used because it is secure, robust, object-oriented, and platform-independent.
+
+## 2. Explain JDK, JRE, and JVM
+
+### 1. JVM (Java Virtual Machine)
+
+JVM stands for Java Virtual Machine. It is an abstract machine that executes Java bytecode.
+
+Functions of JVM:
+
+- Loads and verifies bytecode.
+- Executes Java bytecode.
+- Manages memory.
+- Performs garbage collection.
+- Helps achieve platform independence.
+
+### 2. JRE (Java Runtime Environment)
+
+JRE stands for Java Runtime Environment. Traditionally, it contains the JVM and libraries required to run Java programs.
+
+Functions of JRE:
+
+- Provides an environment to run Java applications.
+- Contains the JVM and supporting libraries.
+- Does not traditionally include development tools such as the Java compiler.
+
+### 3. JDK (Java Development Kit)
+
+JDK stands for Java Development Kit. It provides the tools required to develop, compile, and run Java programs.
+
+Functions of JDK:
+
+- Contains the Java compiler (`javac`).
+- Provides debugging and development tools.
+- Includes the runtime components needed to run Java programs.
+
+### Relationship between JDK, JRE, and JVM
+
+```
+JDK (Java Development Kit)
+ ├── Development tools
+ └── JRE (traditional model)
+      ├── Libraries
+      └── JVM
+           └── Executes bytecode
+```
+
+### Difference between JDK, JRE, and JVM
+
+| Feature            | JDK                      | JRE                      | JVM                             |
+| ------------------ | ------------------------ | ------------------------ | ------------------------------- |
+| Full form          | Java Development Kit     | Java Runtime Environment | Java Virtual Machine            |
+| Purpose            | Develop and run programs | Run programs             | Execute bytecode                |
+| Compiler           | Yes                      | No                       | No                              |
+| Libraries          | Yes                      | Yes                      | No complete library environment |
+| Bytecode execution | Through runtime          | Through JVM              | Yes                             |
+
+### Execution of a Java Program
+
+1. Write the Java source code in a `.java` file.
+2. The Java compiler (`javac`) converts it into bytecode (`.class` file).
+3. The JVM loads and verifies the bytecode.
+4. The JVM executes the bytecode and produces the output.
+
+Example:
+
+```
+Hello.java → javac → Hello.class → JVM → Output
+```
+
+Remember for exams:
+
+- JDK — Develop Java programs.
+- JRE — Run Java programs.
+- JVM — Execute Java bytecode.
+
+Note: Modern Java distributions commonly provide the JDK without a separate JRE installation. The traditional relationship is still useful for understanding the concepts.
